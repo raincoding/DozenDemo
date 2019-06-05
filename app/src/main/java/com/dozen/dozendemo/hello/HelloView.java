@@ -53,6 +53,9 @@ public class HelloView extends View {
         @SuppressLint("DrawAllocation") Paint paint=new Paint();
         paint.setColor(Color.BLACK);
         paint.setStrokeWidth(5);
+        paint.setDither(true);
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setAntiAlias(true);
         paint.setTextSize(textSize);
 
         canvas.drawText(title,width/2-paint.measureText(title)/2,height/2,paint);

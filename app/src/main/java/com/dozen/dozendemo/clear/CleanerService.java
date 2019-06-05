@@ -35,7 +35,7 @@ import java.util.concurrent.CountDownLatch;
 public class CleanerService extends Service {
 
     public static final String ACTION_CLEAN_AND_EXIT
-            = "edu.wkd.towave.service.cleaner.CLEAN_AND_EXIT";
+            = "com.dozen.dozendemo.clear.CLEAN_AND_EXIT";
 
     private static final String TAG = "CleanerService";
 

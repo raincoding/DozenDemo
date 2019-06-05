@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_clear_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始扫描"/>
+    <Button
+        android:id="@+id/btn_clear_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始清理"/>
+
+    <ProgressBar
+        android:id="@+id/pb_clear_state"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="0"
+        />
+    <ProgressBar
+        android:id="@+id/pb_clear_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_clear_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

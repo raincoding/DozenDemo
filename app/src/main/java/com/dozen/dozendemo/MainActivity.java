@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.dozen.dozendemo.clear.ClearActivity;
 import com.dozen.dozendemo.hello.HelloActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
         Button btnHello=findViewById(R.id.btn_view);
         btnHello.setOnClickListener(btnListener);
 
+        Button btnClear=findViewById(R.id.btn_clear);
+        btnClear.setOnClickListener(btnListener);
+
     }
 
     View.OnClickListener btnListener=new View.OnClickListener() {
@@ -29,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
             switch (view.getId()){
                 case R.id.btn_view:
                     cla=HelloActivity.class;
+                    break;
+                case R.id.btn_clear:
+                    cla=ClearActivity.class;
                     break;
             }
 

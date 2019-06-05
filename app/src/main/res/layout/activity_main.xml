@@ -16,6 +16,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Hello Dozen!"/>
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="清理缓存"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
